@@ -16,7 +16,7 @@ form.addEventListener("submit",event =>{
 signInWithEmailAndPassword(auth, email.value, password.value)
   .then((userCredential) => {
     const user = userCredential.user;
-window.location ="./home.html"
+window.location ="./index.html"
   })
   .catch((error) => {
     const errorMessage = error.message;
@@ -34,7 +34,7 @@ google.addEventListener("click" , ()=>{
     const token = credential.accessToken;
     const user = result.user;
     console.log(user);   
-    window.location= './home.html'
+    window.location= './index.html'
   }).catch((error) => {
     const errorMessage = error.message;
 console.log(errorMessage);
