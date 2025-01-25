@@ -34,6 +34,7 @@ google.addEventListener("click" , ()=>{
     const token = credential.accessToken;
     const user = result.user;
     console.log(user);   
+    window.location= './home.html'
   }).catch((error) => {
     const errorMessage = error.message;
 console.log(errorMessage);
