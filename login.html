@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> 
+    
 </head>
 <body>
-    <h1>LOGIN HERE</h1>
-    <form class="form">
-        <input type="email" class="email" placeholder="ENTER YOUR EMAIL!!">
-        <input type="password" placeholder="ENTER PASSWORD" class="password">
-        <button type="submit">LOGIN</button>
-    </form>
+     <div class="main-div">
+    <div class="login-box">
+        <h1 class="head">LOGIN HERE</h1>
+        <form class="form">
+            <div class="input-item">
+                <input type="email" class="email" name="email" aria-label="email">
+                <label for="email">email</label>
+            </div>
+            <div class="input-item">
+                <input type="password" name="password" class="password" aria-label="password">
+                <label for="password">password</label>
+            </div>
+            <button type="submit">Login</button>
+
+        </form>
+        <button class="google">Login With <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3JVfEDbU8ro-ejOf9gxQjVPhHWntu14It_LwHqZ5EoP2_zKcGEHrqx41kkKh8Vft4xaM&usqp=CAU" alt="google" style="height: 2vw;" srcset=""></button>
+        <a href="./register.html">Dont Have Account!</a>
+    </div>
+   </div>
+  
 
 
-    <a href="./inner/register.html">DONT HAVE ACCOUNT ?</a>
-
-    <script type="module" src="./inner/login.js"></script>
+    <script type="module" src="./login.js"></script>
 </body>
 </html>
